@@ -3,18 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Ваше Имя - Портфолио</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu-left">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#projects">Мои проекты</a></li>
+                </ul>
+                <ul class="menu-right">
+                    <li><a href="https://t.me/xPoncho" target="_blank"><img src="telegram-logo.png" alt="Telegram"></a></li>
+                    <li><a href="https://github.com" target="_blank"><img src="mail.png" alt="Mail"></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <p>Это простой сайт, созданный на HTML и CSS.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Мой сайт</p>
+
+    <!-- About and Contact Section -->
+    <!-- About and Contact Section -->
+    <section id="about-contact" class="section about-contact">
+        <div class="container about-contact-container">
+            <div class="text-block">
+                <div class="about-text">
+                    <h2>Обо мне</h2>
+                    <p>Здесь краткое описание вашей истории и профессионального опыта.</p>
+                </div>
+                <div class="contact-details">
+                    <h2>Контакты</h2>
+                    <p><strong>Telegram:</strong> @xPoncho</p>
+                    <p><strong>Email:</strong> egor@gridneff.ru</p>
+                    <p><strong>Телефон: </strong> +7-(925)-073-10-28</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="unnamed.jpg" alt="Ваше фото">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <button class="view-all-projects">Посмотреть все проекты</button>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-links">
+                <p><a href="https://github.com" target="_blank">GitHub</a></p>
+                <p><a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024. Все права защищены.</p>
+        </div>
     </footer>
+
+
 </body>
 </html>

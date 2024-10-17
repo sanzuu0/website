@@ -1,0 +1,186 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-left {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-left li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu-right {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* Изменение стиля иконок в меню на квадратные */
+.menu-right li img {
+    width: 50px;
+    height: 50px;
+    /* Убираем закругление углов */
+    border-radius: 1;
+}
+
+/* About and Contact Section */
+.about-contact-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.text-block {
+    flex: 1;
+    max-width: 50%; /* Задает ширину текстового блока */
+    text-align: left;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.about-image {
+    max-width: 40%; /* Задает ширину для изображения */
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Projects Section */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Увеличенное расстояние между карточками */
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 250px; /* Фиксированная ширина для одинаковых размеров */
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project-btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Размещает ссылки в столбик */
+    gap: 10px;
+    text-align: left;
+    margin-right: auto; /* Прижимает блок ссылок к левому краю */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 0.9em;
+    flex: 1; /* Центрирует текст "Все права защищены" */
+}
+
+/* Button to view all projects */
+.view-all-projects {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.view-all-projects:hover {
+    background-color: #555;
+}
+
+
